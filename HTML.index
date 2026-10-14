@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Menu-Mate: Allergy & Menu Scanner</title>
+    <meta name="description" content="Privacy Policy for Menu-Mate: Allergy & Menu Scanner (com.raza.menumateallergyscanner). Learn how we protect your allergen profiles, camera data, and privacy.">
+    <style>
+        :root {
+            --primary: #1E66D0;
+            --primary-dark: #124EA1;
+            --primary-light: #EBF3FF;
+            --accent: #10B981;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+            --text-main: #1F2937;
+            --text-secondary: #4B5563;
+            --text-muted: #6B7280;
+            --bg-page: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --border-color: #E2E8F0;
+            --code-bg: #F1F5F9;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.65;
+            color: var(--text-main);
+            background-color: var(--bg-page);
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 880px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1E66D0 0%, #0F3E85 100%);
+            color: #FFFFFF;
+            padding: 40px 32px;
+            position: relative;
+        }
+
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        header p.subtitle {
+            font-size: 1.05rem;
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 650px;
+        }
+
+        .meta-strip {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 24px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.88rem;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .meta-item strong {
+            color: #E2E8F0;
+        }
+
+        .content {
+            padding: 36px 32px;
+        }
+
+        .toc-card {
+            background-color: var(--primary-light);
+            border: 1px solid #BFDBFE;
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 36px;
+        }
+
+        .toc-card h3 {
+            color: var(--primary-dark);
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .toc-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 8px 16px;
+        }
+
+        .toc-list a {
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 0.92rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .toc-list a:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+
+        h2 {
+            color: var(--primary-dark);
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-top: 36px;
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h3 {
+            color: var(--text-main);
+            font-size: 1.12rem;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 14px;
+            font-size: 0.97rem;
+        }
+
+        ul, ol {
+            margin-left: 22px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            font-size: 0.97rem;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .alert-box {
+            padding: 16px 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-size: 0.94rem;
+            display: flex;
+            gap: 14px;
+        }
+
+        .alert-box.info {
+            background-color: #EFF6FF;
+            border-left: 4px solid var(--primary);
+            color: #1E40AF;
+        }
+
+        .alert-box.warning {
+            background-color: #FFFBEB;
+            border-left: 4px solid var(--warning);
+            color: #92400E;
+        }
+
+        .alert-box.danger {
+            background-color: #FEF2F2;
+            border-left: 4px solid var(--danger);
+            color: #991B1B;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            margin: 18px 0 24px;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.92rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: #F8FAFC;
+            color: var(--text-main);
+            font-weight: 700;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        code {
+            background-color: var(--code-bg);
+            color: #C026D3;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.88em;
+            font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 16px;
+            margin: 18px 0 24px;
+        }
+
+        .feature-card {
+            background: #FFFFFF;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 18px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+
+        .feature-card h4 {
+            color: var(--primary);
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .feature-card p {
+            font-size: 0.88rem;
+            margin-bottom: 0;
+            color: var(--text-muted);
+        }
+
+        footer {
+            background-color: #F1F5F9;
+            padding: 24px 32px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            header {
+                padding: 28px 20px;
+            }
+            header h1 {
+                font-size: 1.65rem;
+            }
+            .content {
+                padding: 24px 18px;
+            }
+            .meta-strip {
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="app-badge">Official Policy Documentation</div>
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Menu-Mate: Allergy & Menu Scanner</p>
+        
+        <div class="meta-strip">
+            <div class="meta-item">
+                <span>Application ID:</span>
+                <code>com.raza.menumateallergyscanner</code>
+            </div>
+            <div class="meta-item">
+                <span>Effective Date:</span>
+                <strong>October 14, 2026</strong>
+            </div>
+            <div class="meta-item">
+                <span>Developer:</span>
+                <strong>Ahmed Raza</strong>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="toc-card">
+            <h3>📑 Table of Contents</h3>
+            <ul class="toc-list">
+                <li><a href="#overview">1. Overview & Scope</a></li>
+                <li><a href="#features">2. App Features & Functionality</a></li>
+                <li><a href="#permissions">3. Device Permissions</a></li>
+                <li><a href="#data-storage">4. Data Collection & Local Storage</a></li>
+                <li><a href="#ads">5. Third-Party Advertising (AdMob & Networks)</a></li>
+                <li><a href="#ai">6. AI Processing & Cloud Services</a></li>
+                <li><a href="#disclaimer">7. Health & Medical Disclaimer</a></li>
+                <li><a href="#children">8. Children's Privacy (COPPA / GDPR-K)</a></li>
+                <li><a href="#rights">9. User Control & Data Deletion</a></li>
+                <li><a href="#security">10. Security Measures</a></li>
+                <li><a href="#updates">11. Changes to This Policy</a></li>
+                <li><a href="#contact">12. Contact & Support</a></li>
+            </ul>
+        </div>
+
+        <section id="overview">
+            <h2>1. Overview & Scope</h2>
+            <p>
+                Welcome to <strong>Menu-Mate: Allergy & Menu Scanner</strong> (referred to herein as "<strong>Menu-Mate</strong>", "the App", "we", "our", or "us"), package name <code>com.raza.menumateallergyscanner</code>, developed and maintained by <strong>Ahmed Raza</strong>.
+            </p>
+            <p>
+                We recognize the sensitive nature of dietary restrictions, food allergies, and personal health precautions. We are strongly committed to protecting your privacy and ensuring transparent handling of your data. This Privacy Policy details our practices concerning information collection, hardware permissions, cloud processing, on-device local databases, and third-party advertising SDKs integrated into the application.
+            </p>
+            <p>
+                By downloading, accessing, or using <strong>Menu-Mate</strong>, you acknowledge that you have read, understood, and agreed to the practices outlined in this Privacy Policy.
+            </p>
+        </section>
+
+        <section id="features">
+            <h2>2. App Features & Functionality</h2>
+            <p>Menu-Mate provides comprehensive assistive food safety tools designed to identify potential dietary allergens in restaurant menus and packaged food items:</p>
+            
+            <div class="card-grid">
+                <div class="feature-card">
+                    <h4>📷 Real-Time Camera Scanner</h4>
+                    <p>Captures physical menu text and ingredient labels using CameraX preview for immediate optical recognition and analysis.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>🧠 AI Allergen Ingredient Detection</h4>
+                    <p>Integrates Gemini Cloud AI to analyze ingredient lists, highlight known allergens, and determine safety ratings (Safe, Caution, Unsafe).</p>
+                </div>
+                <div class="feature-card">
+                    <h4>👤 Multi-Member Safety Profiles</h4>
+                    <p>Allows users to configure personalized dietary profiles for family members, including custom allergen selections, child modes, and medical notes.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>🔊 High-Risk Audio Siren Alerts</h4>
+                    <p>Provides emergency audio alarms (Emergency Alert, High Pitch Siren, Double Beep, Chime) when severe allergens match your active profile.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>🌍 Chef Alert & Travel Cards</h4>
+                    <p>Generates translated dietary cards in destination languages (English, Urdu, Spanish, French, Italian, German, Japanese, Chinese, etc.) to show waitstaff.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>📚 Allergen Glossary & Custom Items</h4>
+                    <p>Enables browsing common allergen definitions and allows users to define custom allergens with specific sensitivity triggers.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>💾 Offline Room Database Cache</h4>
+                    <p>Saves previous menu scans locally on your device for instant offline retrieval without requiring active cellular or Wi-Fi data.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="permissions">
+            <h2>3. Device Permissions & Why They Are Required</h2>
+            <p>Menu-Mate operates on the principle of minimal required permissions. We request only permissions strictly vital to providing the application's core functionality:</p>
+
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Permission</th>
+                            <th>Purpose & Functional Need</th>
+                            <th>Storage & Privacy Protection</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>android.permission.CAMERA</code></td>
+                            <td>Required to allow the camera preview to capture live images of physical menus, specials boards, and ingredient labels.</td>
+                            <td>Camera feeds are processed in real-time for Optical Character Recognition (OCR). Menu-Mate does <strong>not</strong> access your personal photo library, does <strong>not</strong> secretly record video, and does <strong>not</strong> retain camera imagery once analysis is complete.</td>
+                        </tr>
+                        <tr>
+                            <td><code>android.permission.INTERNET</code></td>
+                            <td>Required to communicate with secure AI analysis APIs (Gemini) for ingredient parsing and translation, as well as serving advertising via third-party ad networks.</td>
+                            <td>All network transmissions are strictly conducted over encrypted HTTPS/TLS connections. Sensitive user identifiers are never transmitted in network payloads.</td>
+                        </tr>
+                        <tr>
+                            <td><code>android.permission.ACCESS_NETWORK_STATE</code></td>
+                            <td>Required to verify whether an active network connection exists before attempting AI scanning requests, and to manage offline caching seamlessly.</td>
+                            <td>Used locally by Android network state managers; no network history or tracking data is collected or shared.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="data-storage">
+            <h2>4. Data Collection & Local Storage (Room Database)</h2>
+            <div class="alert-box info">
+                <div>
+                    <strong>🛡️ Strict On-Device Data Privacy:</strong> All your family profiles, customized allergy selections, medical notes, EpiPen instructions, custom allergen glossary entries, and cached menu scans are stored strictly on your device using a local SQLite/Room database. We do not sell or store your personal health profiles on private external database servers.
+                </div>
+            </div>
+
+            <p>Here is how different categories of data are managed:</p>
+            <ul>
+                <li><strong>User & Family Profiles:</strong> Names, selected allergens, child mode toggles, and medical notes are stored strictly in the private sandbox of the app on your local device.</li>
+                <li><strong>Menu Scan History & Cached Results:</strong> Saved scans and safety ratings are stored locally so you can view them when dining abroad or in areas without an active Internet connection.</li>
+                <li><strong>No User Account or Login Mandate:</strong> Menu-Mate does not force you to register with an email or password to use its core scanning tools, ensuring you can use the app anonymously.</li>
+            </ul>
+        </section>
+
+        <section id="ads">
+            <h2>5. Third-Party Advertising Disclosures (AdMob & Ad Partners)</h2>
+            <p>
+                To support ongoing maintenance, server-side AI processing expenses, and continuous feature updates for free users, <strong>Menu-Mate</strong> displays advertisements. We utilize reputable third-party advertising platforms, including <strong>Google AdMob</strong> and other industry-standard advertising networks and mediation partners.
+            </p>
+
+            <h3>Ad Networks & Partners Integrated (or Planned):</h3>
+            <ul>
+                <li>
+                    <strong>Google AdMob (Google LLC):</strong> 
+                    Google's mobile advertising SDK collects device identifiers, advertising ID (GAID), IP address, and coarse diagnostic telemetry to serve relevant ads. For more information, please review the 
+                    <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Advertising Privacy Policy</a> and 
+                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.
+                </li>
+                <li>
+                    <strong>Meta Audience Network (Meta Platforms, Inc.):</strong> 
+                    Displays contextual and interest-based mobile advertisements. Review their privacy practices at the 
+                    <a href="https://www.facebook.com/privacy/policy" target="_blank" rel="noopener">Meta Privacy Policy</a>.
+                </li>
+                <li>
+                    <strong>Unity Ads (Unity Technologies):</strong> 
+                    Delivers video, banner, and rewarded ads. Review their data policy at the 
+                    <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity Privacy Policy</a>.
+                </li>
+                <li>
+                    <strong>AppLovin (AppLovin Corporation):</strong> 
+                    Provides programmatic ad mediation and performance-based marketing. Review their guidelines at the 
+                    <a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener">AppLovin Privacy Policy</a>.
+                </li>
+                <li>
+                    <strong>ironSource / Unity LevelPlay:</strong> 
+                    Ad mediation and monetization platform. Review details at the 
+                    <a href="https://www.is.com/privacy-policy/" target="_blank" rel="noopener">ironSource Mobile Privacy Policy</a>.
+                </li>
+            </ul>
+
+            <h3>Data Collected by Advertising SDKs:</h3>
+            <p>Third-party ad networks may automatically collect and process certain non-personally identifiable technical information from your device, including:</p>
+            <ul>
+                <li><strong>Advertising Identifiers:</strong> Google Advertising ID (GAID) or Android ID.</li>
+                <li><strong>Device Information:</strong> Device manufacturer, hardware model, operating system version, and system language settings.</li>
+                <li><strong>Network & Location Information:</strong> IP address, mobile carrier, and general geographic location (country/city level; precise GPS location is never collected or requested).</li>
+                <li><strong>Ad Performance Metrics:</strong> Ad impressions, click-through rates, video view duration, and interaction logs.</li>
+            </ul>
+
+            <h3>How to Manage and Opt Out of Personalized Advertising:</h3>
+            <p>
+                You have full control over personalized advertising through your Android operating system settings:
+            </p>
+            <ol>
+                <li>Open your Android device's <strong>Settings</strong> app.</li>
+                <li>Navigate to <strong>Google</strong> &rarr; <strong>Ads</strong> (or <strong>Privacy</strong> &rarr; <strong>Ads</strong>).</li>
+                <li>Tap <strong>Delete advertising ID</strong> or toggle on <strong>Opt out of Ads Personalization</strong>.</li>
+                <li>You can also reset your advertising identifier at any time.</li>
+            </ol>
+        </section>
+
+        <section id="ai">
+            <h2>6. AI Processing & Cloud Services (Google Gemini API)</h2>
+            <p>
+                Menu-Mate harnesses Google's state-of-the-art Gemini generative AI and multimodal computer vision capabilities to accurately identify food ingredients, recognize obscure culinary terms, detect hidden allergens, and translate dish descriptions into foreign languages.
+            </p>
+            <ul>
+                <li>When you take a photo of a menu, the relevant image data is transmitted securely via encrypted HTTPS to Google Cloud AI endpoints.</li>
+                <li>The AI service analyzes the image strictly to extract text and match ingredients against your safety profile.</li>
+                <li>Neither Menu-Mate nor Google uses your uploaded menu snapshots to build permanent user surveillance profiles or sell personal data.</li>
+            </ul>
+        </section>
+
+        <section id="disclaimer">
+            <h2>7. Health & Medical Disclaimer</h2>
+            <div class="alert-box danger">
+                <div>
+                    <strong>⚠️ CRITICAL MEDICAL & FOOD SAFETY NOTICE:</strong><br>
+                    <strong>Menu-Mate is an assistive reference and translation tool only. It is NOT a medical diagnostic instrument, laboratory test, or guaranteed assurance of food safety.</strong>
+                </div>
+            </div>
+            <p>Users must observe the following precautions at all times:</p>
+            <ul>
+                <li><strong>Cross-Contamination:</strong> Menu scans and ingredient disclosures do not reveal shared fryers, preparation surfaces, utensils, or airborne allergens in commercial kitchens.</li>
+                <li><strong>Recipe Modifications:</strong> Restaurant kitchens may alter ingredients, brands, or preparation techniques without updating printed or displayed menus.</li>
+                <li><strong>OCR & Translation Limitations:</strong> While advanced, AI models and optical character recognition can misinterpret stylized fonts, cursive handwriting, foreign culinary idioms, or smudged print.</li>
+                <li><strong>Direct Communication Mandatory:</strong> You must always verbally inform restaurant managers, chefs, and waitstaff of any severe allergies before ordering or consuming food.</li>
+                <li><strong>Emergency Preparedness:</strong> Always carry your prescribed emergency medications, including epinephrine auto-injectors (such as EpiPen, Auvi-Q), when dining away from home.</li>
+            </ul>
+        </section>
+
+        <section id="children">
+            <h2>8. Children's Privacy (COPPA & GDPR-K Compliance)</h2>
+            <p>
+                Menu-Mate is designed as a family dietary safety utility intended for use by adults, parents, and legal guardians. The app features a dedicated <strong>"Child Protection Mode"</strong> toggle designed specifically to enforce stricter warnings and plain-language allergy explanations for children under parental supervision.
+            </p>
+            <p>
+                We do not knowingly collect, request, or harvest personally identifiable information from children under the age of 13 (or under 16 within the European Economic Area). All family profiles, including those representing children, remain strictly within the local device storage under the sole custody and control of the supervising adult. If you believe that a child has provided us with personal data, please contact us immediately for prompt deletion.
+            </p>
+        </section>
+
+        <section id="rights">
+            <h2>9. User Control, Data Retention & Deletion Rights</h2>
+            <p>Under international privacy regulations (including GDPR, CCPA/CPRA, and Google Play User Data Policies), you possess clear rights regarding your personal information:</p>
+            <ul>
+                <li><strong>In-App Clear Cache:</strong> In the app's Safety Settings screen, tap <em>"Clear All"</em> under the Offline Scan Cache section to immediately purge all stored menu scans.</li>
+                <li><strong>Profile Deletion:</strong> You can edit, modify, or remove any safety profile or medical note at any time directly in the Settings or Profiles tab.</li>
+                <li><strong>Complete Data Erasure:</strong> Because all user data resides locally on your Android device, you can completely and permanently delete all data at any time by:
+                    <ol>
+                        <li>Opening Android <strong>Settings</strong> &rarr; <strong>Apps</strong> &rarr; <strong>Menu-Mate</strong>.</li>
+                        <li>Selecting <strong>Storage & Cache</strong> &rarr; <strong>Clear Storage</strong> / <strong>Clear Data</strong>.</li>
+                        <li>Alternatively, uninstalling the application will instantly delete all local Room database files.</li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+
+        <section id="security">
+            <h2>10. Security Measures</h2>
+            <p>
+                We take administrative and technical measures to safeguard your information:
+            </p>
+            <ul>
+                <li><strong>Transport Layer Security (TLS/HTTPS):</strong> All communications between the app and external AI endpoints or ad services are encrypted using modern TLS protocols.</li>
+                <li><strong>Android App Sandbox:</strong> Local database records and configuration settings are protected by Android's internal sandbox architecture, preventing unauthorized third-party apps on your device from accessing Menu-Mate's storage.</li>
+                <li><strong>Zero Health Profiling:</strong> We maintain no centralized servers profiling user medical conditions.</li>
+            </ul>
+        </section>
+
+        <section id="updates">
+            <h2>11. Changes to This Privacy Policy</h2>
+            <p>
+                We may periodically update this Privacy Policy to reflect enhancements to our features, integration of additional advertising networks, changes in legal statutes, or updates to Google Play Developer Policies. When updates are published, the <em>"Effective Date"</em> at the top of this document will be revised accordingly. We encourage you to review this page periodically to stay informed about our privacy safeguards.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2>12. Contact & Support</h2>
+            <p>
+                If you have questions, feedback, inquiries regarding this Privacy Policy, or need technical assistance with Menu-Mate, please contact our support team:
+            </p>
+            <div class="alert-box info">
+                <div>
+                    <strong>Developer:</strong> Ahmed Raza<br>
+                    <strong>Email:</strong> <a href="mailto:ahmedr1artist@gmail.com">ahmedr1artist@gmail.com</a><br>
+                    <strong>App Name:</strong> Menu-Mate: Allergy & Menu Scanner<br>
+                    <strong>Package Name:</strong> <code>com.raza.menumateallergyscanner</code><br>
+                    <strong>Platform:</strong> Android (Google Play Store)
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Menu-Mate (Ahmed Raza). All rights reserved.</p>
+        <p style="margin-top: 6px;">Package: <code>com.raza.menumateallergyscanner</code> &bull; Built for allergen awareness & culinary safety.</p>
+    </footer>
+</div>
+
+</body>
+</html>
